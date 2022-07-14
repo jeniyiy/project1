@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>LSP PEMROGRAMAN DASAR</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 align="center"><font color="white" face="comic sans ms">INPUT STOK PERIFERAL<br>TOKO KOMPUTER GENZ</font>
+    <br><img src="gambar/LOGO3.jpg" width="100" height="100"></h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div align="center">
+                        <label for="productCode"><b>Kode Barang</b></label><br>
+                        <input type="text" name="productCode" id="productCode" required>
+                    </div>
+                    <div align="center">
+                        <label for="product"><b>Nama Barang</b></label><br>
+                        <input type="text" name="product" id="product" required>
+                    </div>
+                    <div align="center">
+                        <label for="qty"><b>Jumlah</b></label><br>
+                        <input type="number" name="qty" id="qty" required>
+                    </div>
+                    <div align="center">
+                        <label for="perPrice"><b>Harga</b></label><br>
+                        <input type="number" name="perPrice" id="perPrice" required>
+                    </div>
+
+                    <div class="form_action--button" align="center">
+                        <input type="submit" value="Simpan">
+                        <input type="reset" value="Batal">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+                <td valign="top">
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>KODE BARANG</th>
+                                <th>NAMA BARANG</th>
+                                <th>JUMLAH</th>
+                                <th>HARGA</th>
+                                <th>TOTAL</th>
+                                <th>DISKON</th>
+                                <th>BAYAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
